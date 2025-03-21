@@ -1,16 +1,109 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <!-- 新增的GA代码 -->
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H25XMQ2Z4G"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-H25XMQ2Z4G');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-H25XMQ2Z4G');
     </script>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 以下原有meta保持不变... -->
+    <meta name="description" content="Play Monster Survivors - the ultimate underwater survival adventure game. Battle mythical sea creatures and survive the ocean depths in this thrilling online survival game.">
+    <link rel="canonical" href="https://oceanliving.org/monster-survivors">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>Monster Survivors | Underwater Survival Adventure Game - OceanLiving.org</title>
+    
+    <!-- Custom CSS -->
+    <style>
+        .game-container {
+            box-shadow: 0 12px 24px -6px rgba(0,0,0,0.1);
+            border-radius: 1.5rem;
+            overflow: hidden;
+        }
+        .feature-card {
+            transition: all 0.2s ease-in-out;
+        }
+        .feature-card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased">
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Header Section -->
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4">
+                Monster Survivors
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                Dive into an epic underwater survival adventure where mythical sea creatures rule the depths. Can you survive the ocean's deadly challenges?
+            </p>
+        </header>
+
+        <!-- Game Embed -->
+        <section class="game-container bg-white p-4 sm:p-6 mb-12">
+            <iframe 
+                src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" 
+                class="w-full aspect-video rounded-xl"
+                allow="autoplay; fullscreen" 
+                title="Monster Survivors Game"
+                loading="eager">
+            </iframe>
+        </section>
+
+        <!-- Game Details -->
+        <section class="grid md:grid-cols-2 gap-8 mb-16">
+            <!-- Game Overview -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm">
+                <h2 class="text-2xl font-bold text-indigo-600 mb-4">About Monster Survivors</h2>
+                <p class="text-gray-600 mb-4">
+                    Monster Survivors is an immersive underwater survival game that challenges players to navigate treacherous ocean depths while evading and battling colossal sea creatures. Combining elements of strategy and action RPG, the game features:
+                </p>
+                <ul class="list-disc pl-6 space-y-2 text-gray-600">
+                    <li>Dynamic ecosystem with intelligent AI predators</li>
+                    <li>Underwater base-building mechanics</li>
+                    <li>Resource management and crafting system</li>
+                    <li>Multiplayer survival challenges</li>
+                </ul>
+            </div>
+
+            <!-- Features Section -->
+            <div class="space-y-6">
+                <div class="feature-card bg-white p-6 rounded-2xl shadow-sm">
+                    <h2 class="text-2xl font-bold text-blue-600 mb-3">Gameplay Highlights</h2>
+                    <p class="text-gray-600">
+                        Experience real-time underwater combat with adaptive difficulty. The game's procedural generation system creates unique challenges every playthrough, ensuring endless replayability.
+                    </p>
+                </div>
+
+                <div class="feature-card bg-white p-6 rounded-2xl shadow-sm">
+                    <h2 class="text-2xl font-bold text-green-600 mb-3">System Requirements</h2>
+                    <ol class="list-decimal pl-6 space-y-2 text-gray-600">
+                        <li>Windows 10 64-bit or macOS Monterey</li>
+                        <li>4GB RAM minimum (8GB recommended)</li>
+                        <li>WebGL 2.0 compatible browser</li>
+                        <li>Stable internet connection</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 text-center">
+            <p class="text-sm text-gray-600">
+                © 2024 OceanLiving.org - All rights reserved. Monster Survivors is a registered trademark.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
